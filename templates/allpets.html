@@ -1,0 +1,13 @@
+{% extends "master.html" %}
+{% block title %}
+Pet Store
+{% endblock %}
+{% block content %}
+<p><a href="/">HOME</a></p>
+    <h1>PetStore</h1>
+    <ul>
+        {% for x in pets %}
+        <li><a href="petsdetails/{{x.id}}">{{x.name}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

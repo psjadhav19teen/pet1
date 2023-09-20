@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+{% block title %}
+Details of {{pets.name}}
+{% endblock %}
+{% block content %}
+    <h1>{{pets.name}}</h1>
+    <img src="{{pets.image.url}}" height="100px" width="100px" alt=''>
+    <p>Species:{{pets.species}}</p>
+    <p>Gender:{{pets.gender}}</p>
+    <p>Breed:{{pets.breed}}</p>
+    <p>Age:{{pets.age}}</p>
+    <p>Description:{{pets.description}}</p>
+    <p>Back to <a href="/petsall">All Pets</a></p>
+{% endblock %}
